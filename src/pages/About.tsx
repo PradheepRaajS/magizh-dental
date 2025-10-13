@@ -12,9 +12,9 @@ const About = () => {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">About Chennai Dental</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">About Magizh Dental Care</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Five decades of excellence in dental care, serving Chennai and beyond with dedication and expertise
+              Quality dental treatment with awareness, serving Kottivakkam and Neelankarai with excellence
             </p>
           </div>
         </div>

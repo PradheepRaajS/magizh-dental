@@ -43,22 +43,22 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
-      location: "Chennai, India",
+      name: "Lalitha Lali",
+      location: "Kottivakkam, Chennai",
       rating: 5,
-      text: "The doctors are incredibly gentle and professional. My family has been coming here for 15 years. The clinic is always spotless and the staff is very caring.",
+      text: "Good and satisfactory treatment and friendly behaviour of staffs and doctors",
     },
     {
-      name: "David Thompson",
-      location: "London, UK",
+      name: "Saravanan",
+      location: "Neelankarai, Chennai",
       rating: 5,
-      text: "I traveled from the UK for dental implants. The quality of care and technology here is world-class, at a fraction of the cost back home. Highly recommended!",
+      text: "Doctor are very kind and good treatment Clear explanation",
     },
     {
-      name: "Rajesh Kumar",
-      location: "Bangalore, India",
+      name: "Mohan P.",
+      location: "Kottivakkam, Chennai",
       rating: 5,
-      text: "Best dental experience ever! The doctors explain everything clearly, and the treatment was completely painless. The digital records system is very convenient.",
+      text: "Excellent service This was my first visit, Had a great experience.",
     },
   ];
 
@@ -80,11 +80,11 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Celebrating 50 Years of
-              <span className="block text-primary">Dental Excellence</span>
+              Magizh Dental Care
+              <span className="block text-primary">Quality Treatment with Dental Awareness</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Your trusted partner for comprehensive dental care in Chennai. World-class treatment with compassion and expertise.
+              Renowned dental care in Kottivakkam & Neelankarai. Rated 4.9★ with 600+ happy patients across Chennai.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
@@ -108,20 +108,20 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Years of Excellence</div>
+              <div className="text-4xl font-bold text-primary mb-2">4.9★</div>
+              <div className="text-sm text-muted-foreground">Google Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50,000+</div>
+              <div className="text-4xl font-bold text-primary mb-2">600+</div>
               <div className="text-sm text-muted-foreground">Happy Patients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
-              <div className="text-sm text-muted-foreground">Expert Dentists</div>
+              <div className="text-4xl font-bold text-primary mb-2">2</div>
+              <div className="text-sm text-muted-foreground">Convenient Locations</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Digital Records</div>
+              <div className="text-4xl font-bold text-primary mb-2">7+</div>
+              <div className="text-sm text-muted-foreground">Dental Services</div>
             </div>
           </div>
         </div>

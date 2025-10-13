@@ -51,41 +51,131 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-8">Contact Information</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-8">Our Locations</h2>
 
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
+              <div className="space-y-8">
+                {/* Kottivakkam Location */}
+                <div className="border border-border rounded-lg p-6 bg-card">
+                  <h3 className="text-xl font-bold text-foreground mb-4">Kottivakkam (Main Branch)</h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Address</h4>
+                        <p className="text-muted-foreground">
+                          496, Ground Floor, Karpagambal Nagar 2nd St,<br />
+                          AGS Colony, Natesan Colony, Kottivakkam,<br />
+                          Chennai, Tamil Nadu 600041, India
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Phone</h4>
+                        <p className="text-muted-foreground">
+                          <a href="tel:+918667744342" className="hover:text-primary transition-colors">
+                            +91 86677 44342
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Clock className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Working Hours</h4>
+                        <p className="text-muted-foreground">
+                          Monday - Saturday: 9:30 AM - 1:00 PM, 4:30 PM - 9:00 PM<br />
+                          Sunday: 9:30 AM - 1:00 PM
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Address</h3>
-                    <p className="text-muted-foreground">
-                      123 Anna Salai, T Nagar<br />
-                      Chennai, Tamil Nadu 600017<br />
-                      India
-                    </p>
+
+                  {/* Map for Kottivakkam */}
+                  <div className="mt-6 rounded-lg overflow-hidden border border-border h-64">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.25!3d12.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d763a70e7b5%3A0xa8b2bd0e558c090f!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1635785441234!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      title="Magizh Dental Care Kottivakkam Location"
+                    />
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-primary" />
+                {/* Neelankarai Location */}
+                <div className="border border-border rounded-lg p-6 bg-card">
+                  <h3 className="text-xl font-bold text-foreground mb-4">Neelankarai Branch</h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Address</h4>
+                        <p className="text-muted-foreground">
+                          1st Floor, 3/143 ECR Neelankarai,<br />
+                          Opposite Sri Kapaleeswarar Nagar, Arch,<br />
+                          Chennai, Tamil Nadu 600115, India
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Phone</h4>
+                        <p className="text-muted-foreground">
+                          <a href="tel:+917010982997" className="hover:text-primary transition-colors">
+                            +91 70109 82997
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Clock className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">Working Hours</h4>
+                        <p className="text-muted-foreground">
+                          Monday - Sunday: 9:30 AM - 1:00 PM, 4:30 PM - 9:00 PM
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <p className="text-muted-foreground">
-                      <a href="tel:+919876543210" className="hover:text-primary transition-colors">
-                        +91 98765 43210
-                      </a>
-                      <br />
-                      <a href="tel:+914412345678" className="hover:text-primary transition-colors">
-                        +91 44 1234 5678
-                      </a>
-                    </p>
+
+                  {/* Map for Neelankarai */}
+                  <div className="mt-6 rounded-lg overflow-hidden border border-border h-64">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.26!3d12.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525da1bb750129%3A0x31bd72db9ce5920e!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1635785441234!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      title="Magizh Dental Care Neelankarai Location"
+                    />
                   </div>
                 </div>
 
+                {/* Common Contact Info */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
@@ -94,48 +184,14 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <p className="text-muted-foreground">
                       <a
-                        href="mailto:info@chennaidental.com"
+                        href="mailto:magizhdentalcare@gmail.com"
                         className="hover:text-primary transition-colors"
                       >
-                        info@chennaidental.com
-                      </a>
-                      <br />
-                      <a
-                        href="mailto:appointments@chennaidental.com"
-                        className="hover:text-primary transition-colors"
-                      >
-                        appointments@chennaidental.com
+                        magizhdentalcare@gmail.com
                       </a>
                     </p>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Working Hours</h3>
-                    <p className="text-muted-foreground">
-                      Monday - Saturday: 9:00 AM - 8:00 PM<br />
-                      Sunday: 9:00 AM - 2:00 PM<br />
-                      <span className="text-xs">(Emergency services available 24/7)</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map */}
-              <div className="mt-8 rounded-lg overflow-hidden border border-border h-64">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8423353177547!2d80.22698931482205!3d13.04300999081805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267a1f3f3ad7b%3A0x3e13c5e5b8c4c3c5!2sT.%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1635785441234!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="Chennai Dental Clinic Location"
-                />
               </div>
             </div>
 
@@ -225,14 +281,22 @@ const Contact = () => {
             Need Emergency Dental Care?
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            Call our 24/7 emergency hotline for immediate assistance
+            Contact our clinic for immediate dental assistance
           </p>
-          <a href="tel:+919876543210">
-            <Button variant="appointment" size="xl">
-              <Phone className="mr-2 h-5 w-5" />
-              Emergency: +91 98765 43210
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+918667744342">
+              <Button variant="appointment" size="xl">
+                <Phone className="mr-2 h-5 w-5" />
+                Kottivakkam: +91 86677 44342
+              </Button>
+            </a>
+            <a href="tel:+917010982997">
+              <Button variant="appointment" size="xl">
+                <Phone className="mr-2 h-5 w-5" />
+                Neelankarai: +91 70109 82997
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
