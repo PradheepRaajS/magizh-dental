@@ -28,13 +28,13 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 1974 by Dr. Rajendran Kumar, Chennai Dental Clinic began with a simple mission: to provide world-class dental care with compassion and integrity. What started as a small practice in T Nagar has grown into one of Chennai's most trusted multispecialty dental centers.
+                  Magizh Dental Care was founded with a clear mission: Quality Treatment with Dental Awareness. With our two conveniently located branches in Kottivakkam and Neelankarai, we serve the Chennai community with dedication and expertise.
                 </p>
                 <p>
-                  Over the past 50 years, we have treated more than 50,000 patients from across India and around the world. Our commitment to excellence has earned us recognition as a leader in dental innovation and patient care.
+                  Under the leadership of COO Dheepshi Manavalan, our clinic has become known for combining advanced dental technology with compassionate, patient-centered care. We have earned the trust of over 600 patients with our 4.9-star rating on Google Reviews.
                 </p>
                 <p>
-                  Today, our clinic combines cutting-edge technology with time-tested expertise. We have invested in the latest dental equipment, digital record systems, and continue to train our team in the most advanced techniques available globally.
+                  Today, our clinic represents the perfect blend of modern technology and personalized care. We continue to invest in the latest dental equipment and ensure our team stays updated with the most advanced techniques in dentistry.
                 </p>
               </div>
             </div>
@@ -113,36 +113,36 @@ const About = () => {
           <div className="space-y-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">1974</span>
+                <span className="text-2xl font-bold text-primary">2020</span>
               </div>
               <div className="flex-grow border-l-2 border-primary pl-6 pb-8">
                 <h3 className="text-xl font-semibold text-foreground mb-2">Clinic Founded</h3>
                 <p className="text-muted-foreground">
-                  Dr. Rajendran Kumar establishes Chennai Dental Clinic in T Nagar
+                  Magizh Dental Care established in Kottivakkam with a mission of quality treatment and dental awareness
                 </p>
               </div>
             </div>
 
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">1990</span>
+                <span className="text-2xl font-bold text-primary">2022</span>
               </div>
               <div className="flex-grow border-l-2 border-primary pl-6 pb-8">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Expansion</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Second Branch Opens</h3>
                 <p className="text-muted-foreground">
-                  Expanded to multispecialty clinic with prosthodontics and orthodontics departments
+                  Expansion to Neelankarai to better serve our growing patient community
                 </p>
               </div>
             </div>
 
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">2005</span>
+                <span className="text-2xl font-bold text-primary">2024</span>
               </div>
               <div className="flex-grow border-l-2 border-primary pl-6 pb-8">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Digital Transformation</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Advanced Technology</h3>
                 <p className="text-muted-foreground">
-                  Implemented fully digital patient record system and advanced imaging technology
+                  Implemented state-of-the-art equipment and digital systems across both branches
                 </p>
               </div>
             </div>

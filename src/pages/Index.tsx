@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Calendar, Award, Users, Heart, Smile, Shield, Activity, Sparkles } from "lucide-react";
+import { Calendar, Award, Users, Heart, Smile, Shield, Activity, Sparkles, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -218,6 +218,80 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Locations Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Visit Our Clinics
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Conveniently located in Kottivakkam and Neelankarai to serve you better
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Kottivakkam Location */}
+            <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4">Kottivakkam Branch</h3>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    No.148, Lattice Bridge Road,<br />
+                    Kottivakkam, Chennai - 600041
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                  <a href="tel:+919840794920" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 98407 94920
+                  </a>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.25!3d12.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzAwLjAiTiA4MMKwMTUnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="250"
+                style={{ border: 0, borderRadius: "0.5rem" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            {/* Neelankarai Location */}
+            <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4">Neelankarai Branch</h3>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    No.8/51, Ramalinga Nagar Main Road,<br />
+                    Neelankarai, Chennai - 600041
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                  <a href="tel:+919841414920" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 98414 14920
+                  </a>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.26!3d12.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzAwLjAiTiA4MMKwMTUnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="250"
+                style={{ border: 0, borderRadius: "0.5rem" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -234,9 +308,9 @@ const Index = () => {
                 Book Online
               </Button>
             </Link>
-            <a href="tel:+919876543210">
+            <a href="tel:+919840794920">
               <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Call +91 98765 43210
+                Call Kottivakkam: +91 98407 94920
               </Button>
             </a>
           </div>

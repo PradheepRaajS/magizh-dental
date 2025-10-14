@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoFull from "@/assets/logo-full.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,14 +23,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary-foreground">DC</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">Chennai Dental</span>
-              <span className="text-xs text-muted-foreground">Excellence Since 1974</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logoFull} 
+              alt="Magizh Dental Care" 
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
