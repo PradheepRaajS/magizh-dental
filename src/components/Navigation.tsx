@@ -48,7 +48,7 @@ const Navigation = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+919876543210">
+            <a href="tel:+918667744342">
               <Button variant="ghost" size="sm">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
@@ -90,7 +90,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 px-4 pt-4 border-t border-border">
-                <a href="tel:+919876543210">
+                <a href="tel:+918667744342">
                   <Button variant="ghost" size="sm" className="w-full justify-start">
                     <Phone className="mr-2 h-4 w-4" />
                     Call Now
