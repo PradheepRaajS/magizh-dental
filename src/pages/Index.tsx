@@ -238,19 +238,20 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <p className="text-muted-foreground">
-                    No.148, Lattice Bridge Road,<br />
-                    Kottivakkam, Chennai - 600041
+                    496, Ground Floor, Karpagambal Nagar 2nd St,<br />
+                    AGS Colony, Natesan Colony, Kottivakkam,<br />
+                    Chennai, Tamil Nadu 600041
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="tel:+919840794920" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 98407 94920
+                  <a href="tel:+918667744342" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 86677 44342
                   </a>
                 </div>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.25!3d12.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzAwLjAiTiA4MMKwMTUnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4891894697896!2d80.25658!3d12.97325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d763a70e7b5%3A0xa8b2bd0e558c090f!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                 width="100%"
                 height="250"
                 style={{ border: 0, borderRadius: "0.5rem" }}
@@ -267,19 +268,20 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <p className="text-muted-foreground">
-                    No.8/51, Ramalinga Nagar Main Road,<br />
-                    Neelankarai, Chennai - 600041
+                    1st Floor, 3/143 ECR Neelankarai,<br />
+                    Opposite Sri Kapaleeswarar Nagar, Arch,<br />
+                    Chennai, Tamil Nadu 600115
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="tel:+919841414920" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 98414 14920
+                  <a href="tel:+917010982997" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 70109 82997
                   </a>
                 </div>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.26!3d12.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzAwLjAiTiA4MMKwMTUnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8954234098765!2d80.25404!3d12.99805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525da1bb750129%3A0x31bd72db9ce5920e!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                 width="100%"
                 height="250"
                 style={{ border: 0, borderRadius: "0.5rem" }}
@@ -308,9 +310,9 @@ const Index = () => {
                 Book Online
               </Button>
             </Link>
-            <a href="tel:+919840794920">
+            <a href="tel:+918667744342">
               <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Call Kottivakkam: +91 98407 94920
+                Call Kottivakkam: +91 86677 44342
               </Button>
             </a>
           </div>

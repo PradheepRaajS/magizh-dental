@@ -109,13 +109,13 @@ const Footer = () => {
                   <li className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">
-                      No.148, Lattice Bridge Rd, Kottivakkam
+                      496, Ground Floor, Karpagambal Nagar 2nd St, Kottivakkam
                     </span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                    <a href="tel:+919840794920" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      +91 98407 94920
+                    <a href="tel:+918667744342" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      +91 86677 44342
                     </a>
                   </li>
                 </ul>
@@ -126,13 +126,13 @@ const Footer = () => {
                   <li className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">
-                      No.8/51, Ramalinga Nagar Main Rd, Neelankarai
+                      1st Floor, 3/143 ECR, Opposite Sri Kapaleeswarar Nagar
                     </span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                    <a href="tel:+919841414920" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      +91 98414 14920
+                    <a href="tel:+917010982997" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      +91 70109 82997
                     </a>
                   </li>
                 </ul>

@@ -104,7 +104,7 @@ const Contact = () => {
                   {/* Map for Kottivakkam */}
                   <div className="mt-6 rounded-lg overflow-hidden border border-border h-64">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.25!3d12.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d763a70e7b5%3A0xa8b2bd0e558c090f!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1635785441234!5m2!1sen!2sin"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4891894697896!2d80.25658!3d12.97325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d763a70e7b5%3A0xa8b2bd0e558c090f!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -164,7 +164,7 @@ const Contact = () => {
                   {/* Map for Neelankarai */}
                   <div className="mt-6 rounded-lg overflow-hidden border border-border h-64">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.26!3d12.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525da1bb750129%3A0x31bd72db9ce5920e!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1635785441234!5m2!1sen!2sin"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8954234098765!2d80.25404!3d12.99805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525da1bb750129%3A0x31bd72db9ce5920e!2sMagizh%20Dental%20Care!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
