@@ -46,19 +46,19 @@ const Index = () => {
       name: "Lalitha Lali",
       location: "Kottivakkam, Chennai",
       rating: 5,
-      text: "Good and satisfactory treatment and friendly behaviour of staffs and doctors",
+      text: "Good and satisfactory treatment and friendly behaviour of staffs and doctors. The clinic infrastructure is very clean and modern.",
     },
     {
       name: "Saravanan",
       location: "Neelankarai, Chennai",
       rating: 5,
-      text: "Doctor are very kind and good treatment Clear explanation",
+      text: "Doctor Dheepshi is very kind and provides excellent treatment with clear explanations. Professional customer management and quality care.",
     },
     {
       name: "Mohan P.",
       location: "Kottivakkam, Chennai",
       rating: 5,
-      text: "Excellent service This was my first visit, Had a great experience.",
+      text: "Excellent service! This was my first visit and I had a great experience. The quality of treatment and state-of-the-art infrastructure exceeded my expectations.",
     },
   ];
 
