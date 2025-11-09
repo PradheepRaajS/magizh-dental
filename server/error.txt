@@ -1,0 +1,57 @@
+/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/index.ts:1:21 - error TS7016: Could not find a declaration file for module 'express'. '/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/express/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/express` if it exists or add a new declaration (.d.ts) file containing `declare module 'express';`
+
+1 import express from "express";
+                      ~~~~~~~~~
+src/index.ts:4:18 - error TS7016: Could not find a declaration file for module 'node-cron'. '/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/node-cron/src/node-cron.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/node-cron` if it exists or add a new declaration (.d.ts) file containing `declare module 'node-cron';`
+
+4 import cron from "node-cron";
+                   ~~~~~~~~~~~
+src/index.ts:5:19 - error TS7016: Could not find a declaration file for module 'node-fetch'. '/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/node-fetch/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/node-fetch` if it exists or add a new declaration (.d.ts) file containing `declare module 'node-fetch';`
+
+5 import fetch from "node-fetch";
+                    ~~~~~~~~~~~~
+src/index.ts:7:18 - error TS7016: Could not find a declaration file for module 'cors'. '/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/cors/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/cors` if it exists or add a new declaration (.d.ts) file containing `declare module 'cors';`
+
+7 import cors from "cors";
+                   ~~~~~~
+src/index.ts:87:26 - error TS7006: Parameter 'req' implicitly has an 'any' type.
+
+87 app.get("/api/reviews", (req, res) => {
+                            ~~~
+src/index.ts:87:31 - error TS7006: Parameter 'res' implicitly has an 'any' type.
+
+87 app.get("/api/reviews", (req, res) => {
+                                 ~~~
+src/index.ts:97:41 - error TS7006: Parameter 'req' implicitly has an 'any' type.
+
+97 app.post("/api/reviews/refresh", async (req, res) => {
+                                           ~~~
+src/index.ts:97:46 - error TS7006: Parameter 'res' implicitly has an 'any' type.
+
+97 app.post("/api/reviews/refresh", async (req, res) => {
+                                                ~~~
+
+    at createTSError (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dheepraaj/git/chennai-smiles-hub/server/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12) {
+  diagnosticCodes: [
+    7016, 7016, 7016,
+    7016, 7006, 7006,
+    7006, 7006
+  ]
+}

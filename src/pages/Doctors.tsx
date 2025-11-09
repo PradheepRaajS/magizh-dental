@@ -7,34 +7,43 @@ import { Link } from "react-router-dom";
 const Doctors = () => {
   const doctors = [
     {
-      name: "Dr. Rajendran Kumar",
-      qualification: "BDS, MDS (Prosthodontics)",
-      specialization: "Founder & Chief Prosthodontist",
-      experience: "50+ years experience",
+      name: "Dr. Dheepshi Manvalan",
+      qualification: "BDS, MDS (Endodontics)",
+      specialization: "Founder & Chief Endodontist",
+      experience: "7+ years experience",
+      dciNum: "DCI No: 27667",
+      imageSrc: "/doctors/DrDheepshi.png",
     },
     {
-      name: "Dr. Priya Kumar",
-      qualification: "BDS, MDS (Orthodontics), USA Fellowship",
-      specialization: "Senior Orthodontist",
-      experience: "25+ years experience",
+      name: "Dr. Anjugam",
+      qualification: "BDS",
+      specialization: "General Dentistry",
+      designation: "Associate Dentist",
+      dciNum: "DCAI No: 34019",
+      imageSrc: "/doctors/DrAnjugam.jpeg",
     },
     {
-      name: "Dr. Arun Krishnan",
-      qualification: "BDS, MDS (Oral Surgery)",
-      specialization: "Oral & Maxillofacial Surgeon",
-      experience: "20+ years experience",
+      name: "Dr. Prathiba",
+      qualification: "BDS",
+      specialization: "General Dentistry",
+      designation: "Associate Dentist",
+      dciNum: "DCI No: 36766",
+      imageSrc: "/doctors/DrPrathiba.jpeg",
     },
     {
-      name: "Dr. Meera Sundaram",
-      qualification: "BDS, MDS (Periodontics)",
-      specialization: "Periodontist",
-      experience: "18+ years experience",
+      name: "Dr. Vidhyashree",
+      qualification: "BDS, MDS (Orthodontics)",
+      specialization: "Orthodontist (Braces & Aligners Specialist)",
+      designation: "Senior Consultant",
+      dciNum: "DCI No: 27601",
+      imageSrc: "/doctors/DrVidhya.jpeg",
     },
     {
       name: "Dr. Vikram Patel",
       qualification: "BDS, MDS (Endodontics), UK Training",
       specialization: "Endodontist (Root Canal Specialist)",
       experience: "15+ years experience",
+
     },
     {
       name: "Dr. Lakshmi Iyer",
@@ -55,6 +64,11 @@ const Doctors = () => {
       experience: "8+ years experience",
     },
   ];
+
+  // pick featured doctor and rest
+  const featuredIndex = doctors.findIndex(d => d.name === "Dr. Dheepshi Manvalan");
+  const featured = featuredIndex !== -1 ? doctors[featuredIndex] : null;
+  const rest = doctors.filter((_, i) => i !== featuredIndex);
 
   return (
     <div className="min-h-screen bg-background">
@@ -88,9 +102,18 @@ const Doctors = () => {
       {/* Doctors Grid */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {doctors.map((doctor, index) => (
-              <DoctorCard key={index} {...doctor} />
+          {/* Use 3 columns on large screens so we can center the featured card with empty placeholders */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featured ? (
+              <>
+                <div className="hidden lg:block" aria-hidden />
+                <DoctorCard key="featured" {...featured} designation={featured.designation ?? ""} />
+                <div className="hidden lg:block" aria-hidden />
+              </>
+            ) : null}
+
+            {rest.map((doctor, index) => (
+              <DoctorCard key={index} {...doctor} designation={doctor.designation ?? ""} />
             ))}
           </div>
         </div>

@@ -6,8 +6,61 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import heroImage from "@/assets/hero-dental.jpg";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  // fallback static testimonials (used before API data loads)
+  const fallbackTestimonials = [
+    {
+      name: "Lalitha Lali",
+      location: "Kottivakkam, Chennai",
+      rating: 5,
+      text: "Good and satisfactory treatment and friendly behaviour of staffs and doctors. The clinic infrastructure is very clean and modern.",
+    },
+    {
+      name: "Saravanan",
+      location: "Neelankarai, Chennai",
+      rating: 5,
+      text: "Doctor Dheepshi is very kind and provides excellent treatment with clear explanations. Professional customer management and quality care.",
+    },
+    {
+      name: "Mohan P.",
+      location: "Kottivakkam, Chennai",
+      rating: 5,
+      text: "Excellent service! This was my first visit and I had a great experience. The quality of treatment and state-of-the-art infrastructure exceeded my expectations.",
+    },
+  ];
+
+  const [testimonials, setTestimonials] = useState(fallbackTestimonials);
+
+  useEffect(() => {
+    let mounted = true;
+    async function loadReviews() {
+      try {
+        const res = await fetch('/api/reviews');
+        if (!res.ok) throw new Error('fetch failed');
+        const data = await res.json();
+        if (!Array.isArray(data) || data.length === 0) return;
+        const mapped = data.map((r) => ({
+          name: r.author_name || 'Anonymous',
+          location: r.relative_time_description || '',
+          rating: r.rating || 5,
+          text: r.text || '',
+        }));
+        // shuffle
+        for (let i = mapped.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [mapped[i], mapped[j]] = [mapped[j], mapped[i]];
+        }
+        if (mounted) setTestimonials(mapped.slice(0, 3));
+      } catch (err) {
+        console.warn('Could not load reviews, using fallback', err);
+      }
+    }
+    loadReviews();
+    return () => { mounted = false; };
+  }, []);
+
   const services = [
     {
       icon: Smile,
@@ -41,27 +94,6 @@ const Index = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Lalitha Lali",
-      location: "Kottivakkam, Chennai",
-      rating: 5,
-      text: "Good and satisfactory treatment and friendly behaviour of staffs and doctors. The clinic infrastructure is very clean and modern.",
-    },
-    {
-      name: "Saravanan",
-      location: "Neelankarai, Chennai",
-      rating: 5,
-      text: "Doctor Dheepshi is very kind and provides excellent treatment with clear explanations. Professional customer management and quality care.",
-    },
-    {
-      name: "Mohan P.",
-      location: "Kottivakkam, Chennai",
-      rating: 5,
-      text: "Excellent service! This was my first visit and I had a great experience. The quality of treatment and state-of-the-art infrastructure exceeded my expectations.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -84,7 +116,7 @@ const Index = () => {
               <span className="block text-primary">Quality Treatment with Dental Awareness</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Renowned dental care in Kottivakkam & Neelankarai. Rated 4.9★ with 600+ happy patients across Chennai.
+              Renowned dental care in Kottivakkam & Neelankarai. Rated 4.9★ with 1000+ happy patients across Chennai.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
@@ -112,7 +144,7 @@ const Index = () => {
               <div className="text-sm text-muted-foreground">Google Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">600+</div>
+              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
               <div className="text-sm text-muted-foreground">Happy Patients</div>
             </div>
             <div className="text-center">
