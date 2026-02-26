@@ -70,7 +70,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -104,13 +104,6 @@ const Services = () => {
             </div>
 
             <div className="bg-background p-6 rounded-lg border border-border">
-              <h3 className="text-lg font-semibold text-foreground mb-3">CAD/CAM Technology</h3>
-              <p className="text-sm text-muted-foreground">
-                Same-day crowns and veneers with computer-aided design and manufacturing
-              </p>
-            </div>
-
-            <div className="bg-background p-6 rounded-lg border border-border">
               <h3 className="text-lg font-semibold text-foreground mb-3">Laser Dentistry</h3>
               <p className="text-sm text-muted-foreground">
                 Minimally invasive procedures with faster healing and less discomfort
@@ -120,7 +113,7 @@ const Services = () => {
             <div className="bg-background p-6 rounded-lg border border-border">
               <h3 className="text-lg font-semibold text-foreground mb-3">3D Imaging</h3>
               <p className="text-sm text-muted-foreground">
-                Comprehensive 3D scans for precise implant placement and orthodontic planning
+                Patnered with labs for Comprehensive 3D scans for precise implant placement and orthodontic planning
               </p>
             </div>
 

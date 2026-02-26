@@ -31,7 +31,7 @@ const About = () => {
                   Magizh Dental Care was founded with a clear mission: Quality Treatment with Dental Awareness. With our two conveniently located branches in Kottivakkam and Neelankarai, we serve the Chennai community with dedication and expertise.
                 </p>
                 <p>
-                  Under the leadership of COO Dheepshi Manavalan, our clinic has become known for combining advanced dental technology with compassionate, patient-centered care. We have earned the trust of over 600 patients with our 4.9-star rating on Google Reviews.
+                  Under the leadership of Founder and Chief Doctor Dr.Dheepshi Manavalan MDS., , our clinic has become known for combining advanced dental technology with compassionate, patient-centered care. We have earned the trust of over 600 patients with our 4.9-star rating on Google Reviews.
                 </p>
                 <p>
                   Today, our clinic represents the perfect blend of modern technology and personalized care. We continue to invest in the latest dental equipment and ensure our team stays updated with the most advanced techniques in dentistry.
@@ -137,39 +137,16 @@ const About = () => {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">2024</span>
+                <span className="text-2xl font-bold text-primary">2026</span>
               </div>
               <div className="flex-grow border-l-2 border-primary pl-6 pb-8">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Advanced Technology</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">No break</h3>
                 <p className="text-muted-foreground">
-                  Implemented state-of-the-art equipment and digital systems across both branches
+                  Seamless care from morning to night: Announced our new continuous full-day hours.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">2015</span>
-              </div>
-              <div className="flex-grow border-l-2 border-primary pl-6 pb-8">
-                <h3 className="text-xl font-semibold text-foreground mb-2">International Recognition</h3>
-                <p className="text-muted-foreground">
-                  Began serving international patients seeking quality dental care at affordable costs
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-24 text-right">
-                <span className="text-2xl font-bold text-primary">2024</span>
-              </div>
-              <div className="flex-grow pl-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">50 Years Strong</h3>
-                <p className="text-muted-foreground">
-                  Celebrating five decades of dental excellence with over 50,000 happy patients
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
