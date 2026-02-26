@@ -39,30 +39,32 @@ const Doctors = () => {
       imageSrc: "/doctors/DrVidhya.jpeg",
     },
     {
-      name: "Dr. Vikram Patel",
-      qualification: "BDS, MDS (Endodontics), UK Training",
-      specialization: "Endodontist (Root Canal Specialist)",
-      experience: "15+ years experience",
-
-    },
-    {
-      name: "Dr. Lakshmi Iyer",
+      name: "Dr. Sahana",
       qualification: "BDS, MDS (Prosthodontics)",
       specialization: "Prosthodontist & Cosmetic Dentist",
-      experience: "12+ years experience",
-    },
+      designation: "Senior Consultant",
+      //dciNum: "DCI No: 27601",
+      //imageSrc: "/doctors/DrSahana.jpeg",
+
+    }, 
     {
-      name: "Dr. Karthik Menon",
-      qualification: "BDS, Implantology Diploma, Germany Training",
-      specialization: "Implantologist",
-      experience: "10+ years experience",
-    },
+      name: "Dr. Pandiyarajan",
+      qualification: "BDS, MDS (Prosthodontics)",
+      specialization: "Prosthodontist & Cosmetic Dentist",
+      designation: "Senior Consultant",
+      //dciNum: "DCI No: 27601",
+      //imageSrc: "/doctors/DrSahana.jpeg",
+
+    },    
     {
-      name: "Dr. Ananya Reddy",
-      qualification: "BDS, MDS (Pediatric Dentistry)",
-      specialization: "Pediatric Dentist",
-      experience: "8+ years experience",
-    },
+      name: "Dr. Sandhiya",
+      qualification: "BDS, MDS (Prosthodontics)",
+      specialization: "Prosthodontist & Cosmetic Dentist",
+      designation: "Senior Consultant",
+      //dciNum: "DCI No: 27601",
+      //imageSrc: "/doctors/DrSahana.jpeg",
+
+    }, 
   ];
 
   // pick featured doctor and rest
@@ -128,18 +130,11 @@ const Doctors = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="text-center p-6">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <p className="text-muted-foreground">Years of Combined Experience</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <p className="text-muted-foreground">International Certifications</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-4xl font-bold text-primary mb-2">5★</div>
+              <div className="text-4xl font-bold text-primary mb-2">4.8★</div>
               <p className="text-muted-foreground">Average Patient Rating</p>
+              <span className="text-sm text-muted-foreground">What more than you need than the patients trust!</span>
             </div>
           </div>
         </div>
@@ -154,13 +149,7 @@ const Doctors = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-muted/50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-foreground mb-3">International Training</h3>
-              <p className="text-sm text-muted-foreground">
-                Many of our dentists have completed advanced training and fellowships in USA, UK, and Germany
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
 
             <div className="bg-muted/50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-foreground mb-3">Patient-First Approach</h3>
@@ -172,7 +161,7 @@ const Doctors = () => {
             <div className="bg-muted/50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-foreground mb-3">Continuous Learning</h3>
               <p className="text-sm text-muted-foreground">
-                Regular attendance at international conferences and workshops to stay at the forefront of dentistry
+                Regular attendance at conferences and workshops to stay at the forefront of dentistry
               </p>
             </div>
 

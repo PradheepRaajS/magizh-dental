@@ -111,12 +111,13 @@ const Index = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight font-display hero-title">
               Magizh Dental Care
               <span className="block text-primary">Quality Treatment with Dental Awareness</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Renowned dental care in Kottivakkam & Neelankarai. Rated 4.9★ with 1000+ happy patients across Chennai.
+              Renowned dental care in Kottivakkam & Neelankarai.</p>
+             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"> Rated 4.9★ with 2000+ happy patients across Chennai.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
@@ -144,7 +145,7 @@ const Index = () => {
               <div className="text-sm text-muted-foreground">Google Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+              <div className="text-4xl font-bold text-primary mb-2">2000+</div>
               <div className="text-sm text-muted-foreground">Happy Patients</div>
             </div>
             <div className="text-center">
@@ -337,14 +338,19 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button variant="secondary" size="xl" className="bg-background text-foreground hover:bg-background/90">
+              <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
                 <Calendar className="mr-2 h-5 w-5" />
                 Book Online
               </Button>
             </Link>
             <a href="tel:+918667744342">
-              <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
                 Call Kottivakkam: +91 86677 44342
+              </Button>
+            </a>
+            <a href="tel:+917010982997">
+              <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
+                Call Neelankarai: +91 70109 82997
               </Button>
             </a>
           </div>
